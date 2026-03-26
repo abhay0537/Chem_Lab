@@ -1,0 +1,16 @@
+{
+  "name": "chemlab-management-system",
+  "version": "1.0.0",
+  "description": "ChemLab Management System - Full Stack MERN App",
+  "scripts": {
+    "install:all":    "npm install --prefix backend && npm install --prefix frontend",
+    "seed":           "npm run seed --prefix backend",
+    "dev:backend":    "npm run dev --prefix backend",
+    "dev:frontend":   "npm start --prefix frontend",
+    "start:backend":  "npm start --prefix backend",
+    "start:frontend": "npm start --prefix frontend"
+  },
+  "keywords": ["chemlab", "mern", "chemistry", "inventory"],
+  "author": "ChemLab Team",
+  "license": "MIT"
+}
