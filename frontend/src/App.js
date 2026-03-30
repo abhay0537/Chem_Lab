@@ -34,6 +34,9 @@ import Analytics        from './pages/admin/Analytics';
 import LoadingScreen from './components/shared/LoadingScreen';
 import NotFound      from './components/shared/NotFound';
 
+// About
+import About from './pages/About';   // ← NEW
+
 // ─── Protected Route Wrapper ─────────────────────────────────────────────────
 const ProtectedRoute = ({ children, adminOnly = false }) => {
   const { isAuthenticated, isAdmin, loading } = useAuth();
@@ -70,6 +73,12 @@ function AppRoutes() {
         <Route path="borrow"     element={<BorrowChemical />} />
         <Route path="history"    element={<MyHistory />} />
         <Route path="profile"    element={<UserProfile />} />
+      </Route>
+
+      {/* ── About Us (sits inside UserLayout so sidebar/header remains) ── */}
+      {/* Option A: inside UserLayout (recommended — keeps sidebar visible) */}
+      <Route path="/about" element={<ProtectedRoute><UserLayout /></ProtectedRoute>}>
+        <Route index element={<About />} />
       </Route>
 
       {/* Admin Routes */}
