@@ -185,34 +185,6 @@ npm start
 
 ---
 
-## 📊 Analytics Included
-
-* 📈 Daily usage trends
-* 🧪 Most borrowed chemicals
-* 🏫 Lab-wise usage
-* 👨‍🎓 Student activity
-
----
-
-## ☁️ Deployment
-
-| Service  | Platform      |
-| -------- | ------------- |
-| Backend  | Render        |
-| Frontend | Vercel        |
-| Database | MongoDB Atlas |
-
----
-
-## 📸 Screenshots (Add Later)
-
-* Login Page
-* Dashboard
-* Admin Panel
-* Analytics
-
----
-
 ## 🎓 Project Value
 
 This project demonstrates:
